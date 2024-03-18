@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Scheduling</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #56CCF2, #2F80ED);
+            color: #fff;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+        }
+
+        .jumbotron {
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        .btn-schedule {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-schedule:hover {
+            background-color: #218838;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h2 class="display-4">Service Scheduling</h2>
+    </div>
+    <div class="container">
+        <form id="serviceForm">
+            <!-- Your form content here -->
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <select class="form-control" id="location" name="location" required>
+                    <option value="sehore">Sehore</option>
+                    <option value="bhopal">Bhopal</option>
+                    <option value="indore">Indore</option>
+                </select>
+            </div>
+            <!-- Add other form fields as needed -->
+            <div class="form-group">
+                <label for="serviceType">Service Type:</label>
+                <select class="form-control" id="serviceType" name="serviceType" required>
+                    <option value="haircut">Cleaning</option>
+                    <option value="massage">zxc</option>
+                    <option value="manicure">zsdx</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" class="form-control" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Time:</label>
+                <input type="time" class="form-control" id="time" name="time" required>
+            </div>
+
+            <div class="form-group">
+                <label for="additionalInfo">Additional Information:</label>
+                <textarea class="form-control" id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+            </div>
+
+            <div class="text-center">
+                <!-- Updated button to use Bootstrap classes -->
+                <a href="payment.html" class="btn btn-success btn-schedule" role="button">Schedule Service</a>
+                <a href="thankyou.html" class="btn btn-success btn-schedule" role="button">Pay After Service</a>
+            </div>
+        </form>
+    </div>
+
+    <!-- Add Bootstrap JS and Popper.js scripts (required for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

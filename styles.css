@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif; /* Assuming you have the Inter font available */
+}
+
+.main-header {
+    height: 89px;
+    background-color: #494747; /* Set the background color to #bebcbc */
+}
+
+.main-body {
+    padding: 20px; /* Add padding to provide some space around the content */
+}
+
+.location-icon {
+    margin-right: 15px;
+    width: 29px;
+    height: 31px;
+}
+
+.search-icon {
+    margin-left: 15px;
+    width: 29px;
+    height: 25px;
+}
+
+.dropdown.location-dropdown {
+    position: relative;
+}
+
+.dropdown.location-dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+/* You can adjust the following styles based on your preferences */
+
+.navbar-brand {
+    margin-right: 20px;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px;
+}
+
+.btn-success,
+.btn-light {
+    border-radius: 30px;
+    margin-right: 60px; /* Adjusted the margin to 60px to shift 40 pixels to the right */
+}
+
+.btn-light img {
+    max-height: 100%;
+}
+
+.whatsapp-button {
+    margin-right: 10px;
+}
+
+.login-button {
+    margin-left: auto;
+}
+
+.h2-container {
+    margin-top: 10px;
+}
+h2 {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+.rectangle-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto; /* Adjust the margin as needed */
+}
+
+.rectangle {
+    width: 349px;
+    height: 164px;
+    display: flex;
+}
+
+.left-rectangle {
+    margin-right: 10px; /* Adjust margin to bring it closer to the middle */
+    margin-left: 75px;
+}
+
+.right-rectangle {
+    margin-left: 10px; /* Adjust margin to bring it closer to the middle */
+    margin-right:75px;
+}
+
+.color-part {
+    flex: 1;
+    padding: 10px; /* Add padding for spacing and aesthetics */
+}
+
+.image-part {
+    flex: 1;
+}
+
+.btn-book {
+    width: 81px;
+    height: 24px;
+    margin-top: 10px; /* Adjust margin as needed */
+    color: white; /* Set text color to white */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1-container {
+    margin-top: 100px; /* Adjust margin as needed */
+    margin-left: 20px; /* Adjust margin as needed */
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.main-content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+}
+
+/* Styles for the icon container */
+.icon-container {
+    margin-left: 20px;
+    background-color: white; /* Set background color to white */
+    width: 600px; /* Set width to 600 pixels */
+    padding: 20px; /* Add padding for spacing and aesthetics */
+}
+
+.icon-group {
+    display: flex;
+    flex-direction: row; /* Change flex direction to row */
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+/* Styles for each icon */
+.icon {
+    text-align: center;
+}
+
+.icon img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px; /* Add rounded corners */
+    margin-right: 20px; /* Adjust margin between icons */
+}
+
+/* Cleaners Image */
+.cleaners-image {
+    margin-left: 20px; /* Adjust margin as needed */
+    margin-right: 50px;
+}
+
+.icon-button {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.image-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    margin: 20px; /* Adjust margin as needed */
+}
+
+/* Styles for each image container */
+.image-container {
+    width: calc(50% - 10px); /* Set width to 50% with margin in between */
+    margin-bottom: 20px; /* Adjust margin as needed */
+    position: relative; /* Add relative positioning to position the button */
+}
+
+/* Styles for the click-me button */
+.click-me {
+    position: absolute;
+    top: 60%; /* Adjust the top position to move the button slightly downwards */
+    left: 10px; /* Adjust the left position to move the button to the far left */
+    transform: translateY(-50%);
+    background-color:#033652;
+    ;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    opacity: 2; /* Visible by default */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.secondary-body {
+    background-color: #8B8787;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Styles for the left div */
+.left-div {
+    color: black;
+}
+
+.left-heading {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 220px);
+    grid-gap: 20px;
+}
+
+.grid-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Styles for the right div */
+.right-div {
+    color: black;
+}
+
+.right-heading {
+    font-weight: bold;
+}
+
+.request-form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 565px;
+}
+
+.request-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.request-form input,
+.request-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.service-request-button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+

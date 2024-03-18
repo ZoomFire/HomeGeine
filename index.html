@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Home Genie</title>
+</head>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f9fa; /* Light Gray background */
+        }
+
+        .main-header {
+            background-color: #f8f9fa; /* Green background */
+            padding: 10px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .main-header:hover {
+            background-color: #218838; /* Darker Green on hover */
+        }
+
+        .navbar-brand img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .navbar-brand:hover img {
+            transform: scale(1.1);
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .location-dropdown .btn-light {
+            background-color: transparent;
+            border: none;
+        }
+
+        .location-dropdown .location-icon {
+            width: 30px;
+            height: 30px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .location-dropdown:hover .location-icon {
+            transform: rotate(360deg);
+        }
+
+        .navbar-nav .nav-item {
+            margin: 0 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .navbar-nav .nav-item:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-button {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .whatsapp-button:hover {
+            transform: scale(1.1);
+        }
+
+        .login-button {
+            background-color: #ffc107; /* Yellow background */
+            color: #212529; /* Dark text color */
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .login-button:hover {
+            background-color: #ffca2c; /* Darker Yellow on hover */
+        }
+    </style>
+
+<body>
+
+    <header class="main-header navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <a href="index.html"><img src="logo.png" alt="Logo" width="129" height="89"></a>
+        </a>
+
+        <div class="dropdown location-dropdown ml-2">
+            <button class="btn btn-light dropdown-toggle" type="button" id="locationDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="loco.png" alt="Location Icon" class="location-icon">
+            </button>
+            <div class="dropdown-menu" aria-labelledby="locationDropdown">
+                <a class="dropdown-item" href="index2.html">Bhopal</a>
+                <a class="dropdown-item" href="index2.html">Ashta</a>
+                <a class="dropdown-item" href="index2.html">Sehore</a>
+            </div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto align-items-center">
+                <li class="nav-item">
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-success ml-2" onclick="location.href='index2.html'">Schedule a service</button>
+                </li>
+            </ul>
+
+            <button class="btn btn-light ml-2 whatsapp-button">
+                <!-- Whatsapp -->
+                <a class="whatsapp" href="https://wa.me/+916386848409" target="_blank">
+                    <img src="whatsapp.png" width="64"/>
+                </a>
+            </button>
+            <a href="signup.html" class="btn btn-light ml-2 login-button">Signup</a>
+
+        </div>
+    </header>
+
+
+
+
+<div class="main-body" style="background-color: #E3E1E1;">
+
+    <div id="carouselExample" class="carousel slide mt-4" data-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="handymen.png" class="d-block w-100" alt="First Slide" width="1155" height="393">
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="handymen1.png" class="d-block w-100" alt="Second Slide" width="1155" height="393">
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="ert.jpg" class="d-block w-100" alt="Third Slide" width="1155" height="393">
+            </div>
+        </div>
+        <!-- Add carousel controls -->
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #622626;
+            margin: 0;
+            padding: 0;
+        }
+
+        .rectangle-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .rectangle {
+            width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .rectangle:hover {
+            transform: scale(1.05);
+        }
+
+        .color-part {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .color-part p {
+            margin: 0;
+            line-height: 1.4;
+            color: #fff;
+        }
+
+        .image-part img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .btn {
+            background-color: #1b3768;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Additional styles for each rectangle */
+        .left-rectangle .color-part {
+            background-color: #238723;
+        }
+
+        .left-rectangle .btn {
+            background-color: #28a745;
+        }
+
+        .right-rectangle .color-part {
+            background-color: #B61575;
+        }
+
+        .right-rectangle .btn {
+            background-color: #d9534f;
+        }
+
+        /* Add more styles as needed */
+
+    </style>
+
+<body>
+    <div class="rectangle-container">
+        <!-- First Rectangle -->
+        <div class="rectangle left-rectangle">
+            <div class="color-part" style="background-color: #238723;">
+                <p class="text-white font-weight-bold">
+                    Get Sparkling<br>
+                    CLEAN<br>
+                    BATHROOMS
+                </p>
+                <button class="btn btn-success ml-2" onclick="location.href='location.html'">BOOK</button>
+            </div>
+            <div class="image-part">
+                <img src="woman1.png" alt="Woman Image" width="183" height="164">
+            </div>
+        </div>
+
+        <!-- Second Rectangle -->
+        <div class="rectangle">
+            <div class="color-part" style="background-color: #52798F;">
+                <p class="text-white font-weight-bold">
+                    color your home.<br>
+                    <br>
+                    goals achieved.
+                </p>
+                <button class="btn btn-success ml-2" onclick="location.href='location.html'">BOOK</button>
+            </div>
+            <div class="image-part">
+                <img src="paint.png" alt="Haircut Image" width="183" height="164">
+            </div>
+        </div>
+
+        <!-- Third Rectangle -->
+        <div class="rectangle right-rectangle">
+            <div class="color-part" style="background-color: #B61575;">
+                <p class="text-white font-weight-bold">
+                    3.. 2.. 1.. AC<br>
+                    Service
+                </p>
+                <button class="btn btn-success ml-2" onclick="location.href='location.html'">BOOK</button>
+            </div>
+            <div class="image-part">
+                <img src="acrepair.png" alt="AC Repair Image" width="183" height="164">
+            </div>
+        </div>
+    </div>
+  
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Header Style */
+        .h1-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        h1 {
+            color: #4CAF50; /* Green color */
+            font-size: 2em;
+        }
+
+        h1.font-italic {
+            font-style: italic;
+        }
+
+        /* Main Content Style */
+        .main-content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Icon Styles */
+        .icon-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .icon-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .icon-button {
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .icon-button:hover {
+            transform: scale(1.1);
+        }
+
+        .icon img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .icon p {
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Cleaners Image Style */
+        .cleaners-image {
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .cleaners-image:hover {
+            transform: scale(1.05);
+        }
+
+        /* Image Grid Styles */
+        .image-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .image-container {
+            position: relative;
+            margin: 10px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container:hover {
+            transform: scale(1.05);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .click-me {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 1.5em;
+            text-decoration: none;
+            background-color: #4CAF50;
+            padding: 10px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .image-container:hover .click-me {
+            opacity: 1;
+        }
+    </style>
+
+<body>
+    <div class="h1-container">
+        <h1 class="font-weight-bold ">Services...<br>we offer</h1>
+    </div>
+
+    <div class="main-content-container">
+        <div class="icon-container">
+            <div class="icon-group">
+                <!-- Top Left Icon -->
+                <a href="cleaning.html" class="icon-button">
+                    <div class="icon">
+                        <img src="household.png" alt="Cleaning Icon" width="150" height="150">
+                        <p>Cleaning</p>
+                    </div>
+                </a>
+
+                <!-- Top Middle Icon -->
+                <a href="AC.html" class="icon-button">
+                    <div class="icon">
+                        <img src="mechanic.png" alt="Electrician, Plumber, and Carpenter Icon" width="150" height="150">
+                        <p>Electrician, Plumber, and Carpenter</p>
+                    </div>
+                </a>
+
+                <!-- Top Right Icon -->
+                <a href="AC.html" class="icon-button">
+                    <div class="icon">
+                        <img src="service.png" alt="AC Repair Icon" width="150" height="150">
+                        <p>AC repair</p>
+                    </div>
+                </a>
+          
+                <!-- Bottom Left Icon -->
+                <a href="cleaning.html" class="icon-button">
+                    <div class="icon">
+                        <img src="renovation.png" alt="Painting & Home Renovation Icon" width="150" height="150">
+                        <p>Painting & Home Renovation</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    
+        <!-- Cleaners Image -->
+    
+    </div>
+  
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f9fa; /* Light Gray background */
+        }
+    
+        .h1-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+    
+        h1 {
+            color: #4CAF50; /* Green color */
+            font-size: 2em;
+        }
+    
+        .image-grid {
+            margin: 20px auto;
+            display: table;
+            border-spacing: 15px; /* Add spacing between images */
+        }
+    
+        .image-container {
+            display: table-cell;
+            position: relative;
+            margin: 10px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            height: 300px; /* Set a fixed height */
+            border: 2px solid #4CAF50; /* Add border between images */
+        }
+    
+        .image-container:hover {
+            transform: scale(1.05);
+        }
+    
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Maintain aspect ratio and cover container */
+            border-radius: 10px;
+        }
+    
+        .click-me {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 1.5em;
+            text-decoration: none;
+            background-color: #4CAF50;
+            padding: 10px;
+            border-radius: 5px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+    
+        .image-container:hover .click-me {
+            opacity: 1;
+        }
+    </style>
+    
+    
+  
+    
+        <div class="h1-container">
+            <h1 class="font-weight-bold">Nonstop Buy appliances...</h1>
+        </div>
+    
+        <div class="image-grid">
+            <div class="image-container">
+                <img src="appall.png" alt="Appall" width="525" height="185">
+                <a href="appliances.html" class="click-me">Digital Products </a>
+            </div>
+    
+            <div class="image-container">
+                <img src="appkit.png" alt="Appkit" width="525" height="185">
+                <a href="appliances.html" class="click-me">Home Decoration  </a>
+            </div>
+    
+            <div class="image-container">
+                <img src="appdig.png" alt="Appdig" width="525" height="185">
+                <a href="appliances.html" class="click-me">Kitchen  </a>
+            </div>
+    
+            <div class="image-container">
+                <img src="appele.png" alt="Appele" width="525" height="185">
+                <a href="appliances.html" class="click-me">Bathroom </a>
+            </div>
+        </div>
+    
+        
+            <style>
+                /* Keyframes for animations */
+                @keyframes fadeInUp {
+                    from {
+                        opacity: 0;
+                        transform: translateY(20px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+        
+                body {
+                    font-family: 'Arial', sans-serif;
+                    margin: 20px;
+                    background-color: #f0f0f0; /* Light Gray background */
+                }
+        
+                .secondary-body {
+                    display: flex;
+                    justify-content: space-between;
+                    animation: fadeInUp 1s ease-in-out;
+                }
+        
+                .left-div, .right-div {
+                    width: 48%;
+                    padding: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    margin: 10px;
+                    background-color: #ffffff; /* White background */
+                    animation: fadeInUp 1s ease-in-out;
+                }
+        
+                .left-div {
+                    background-color: #4c5baf; /* Green background for the left div */
+                    color: #ffffff; /* White text color */
+                }
+        
+                .left-heading {
+                    color: #ffffff; /* White text color for the left heading */
+                }
+        
+                .grid-container {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                }
+        
+                .grid-item {
+                    width: 23%;
+                    text-align: center;
+                    padding: 15px;
+                    border-radius: 5px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    background-color: #ffffff; /* White background for grid items */
+                    margin: 0;
+                    animation: fadeInUp 1s ease-in-out forwards;
+                    animation-delay: 0.5s;
+                }
+        
+                .grid-item p {
+                    margin: 0;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    color: #4CAF50; /* Green text color for grid items */
+                }
+        
+                .right-div {
+                    background-color: #ffffff; /* White background for the right div */
+                    color: #333333; /* Dark text color */
+                }
+        
+                .right-heading {
+                    color: #4CAF50; /* Green text color for the right heading */
+                    margin-bottom: 20px;
+                }
+        
+                .request-form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                }
+        
+                label {
+                    color: #333333; /* Dark text color for labels */
+                }
+        
+                .form-control {
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #4CAF50; /* Green border color for form controls */
+                    border-radius: 5px;
+                    transition: border-color 0.3s;
+                }
+        
+                .form-control:focus {
+                    outline: none;
+                    border-color: #218838; /* Darker Green on focus */
+                }
+        
+                .service-request-button {
+                    background-color: #4CAF50; /* Green background color */
+                    color: #ffffff; /* White text color */
+                    padding: 12px 20px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    transition: background-color 0.3s;
+                }
+        
+                .service-request-button:hover {
+                    background-color: #218838; /* Darker Green on hover */
+                }
+            </style>
+    
+        
+            <div class="secondary-body">
+                <!-- Left Div -->
+                <div class="left-div">
+                    <h4 class="left-heading">Let's Number Talk.</h4>
+                    <div class="grid-container">
+                        <!-- Top Left Rectangle -->
+                        <div class="grid-item">
+                            <p>5+<br>Variety<br>Services</p>
+                        </div>
+                        <!-- Top Right Rectangle -->
+                        <div class="grid-item">
+                            <p>150+<br>Partners</p>
+                        </div>
+                        <!-- Bottom Left Rectangle -->
+                        <div class="grid-item">
+                            <p>25000+<br>Happy<br>Customers</p>
+                        </div>
+                        <!-- Bottom Right Rectangle -->
+                        <div class="grid-item">
+                            <p>200+<br>Expert<br>Technicians</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Right Div -->
+                <div class="right-div">
+                    <h4 class="right-heading">Fill up the form to get a call from us</h4>
+                    <form class="request-form">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" class="form-control" required>
+        
+                        <label for="phoneNumber">Phone Number:</label>
+                        <input type="text" id="phoneNumber" name="phoneNumber" class="form-control" required>
+        
+                        <label for="pinCode">Pin Code (Optional):</label>
+                        <input type="text" id="pinCode" name="pinCode" class="form-control">
+        
+                        <label for="selectAppliance">Select Location:</label>
+                        <select id="selectAppliance" name="selectAppliance" class="form-control">
+                            <option value="appliance1">Bhopal</option>
+                            <option value="appliance2">Indore</option>
+                            <option value="appliance3">Sehore</option>
+                        </select>
+        
+                        <button type="submit" class="service-request-button">Service Request</button>
+                    </form>
+                </div>
+            </div>
+       
+        
+    
+
+
+
+            <footer class="footer-section">
+                <div class="container">
+                    <div class="footer-cta pt-5 pb-5">
+                        <div class="row">
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div class="cta-text">
+                                        <h4>Find us</h4>
+                                        <span>VIT Bhopal University, Sehore 466114, M.P</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <i class="fas fa-phone"></i>
+                                    <div class="cta-text">
+                                        <h4>Call us</h4>
+                                        <span>0447 635 825</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <i class="far fa-envelope-open"></i>
+                                    <div class="cta-text">
+                                        <h4>Mail us</h4>
+                                        <span>mail@info.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-content pt-5 pb-5">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 mb-50">
+                                <div class="footer-widget">
+                                    <div class="footer-logo">
+                                        <a href="index.html"><img src="logo.png" class="img-fluid" alt="logo"></a>
+                                    </div>
+                                    <div class="footer-text">
+                                        <p>Home Genie stands at the forefront of revolutionizing the home services industry, driven by a core mission to address the challenges homeowners face in finding reliable, affordable, and community-centric solutions.</p>
+                                    </div>
+                                    <div class="footer-social-icon">
+                                        <span>Follow us</span>
+                                        <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                        <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                        <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                                <div class="footer-widget">
+                                    <div class="footer-widget-heading">
+                                        <h3>Useful Links</h3>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="about.html">about</a></li>
+                                        <li><a href="index2.html">services</a></li>
+                                        <!-- <li><a href="#">portfolio</a></li> -->
+                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="#">About us</a></li>
+                                        <li><a href="index2.html">Our Services</a></li>
+                                        <li><a href="#">Expert Team</a></li>
+                                        <li><a href="#">Contact us</a></li>
+                                        <li><a href="#">Latest News</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                                <div class="footer-widget">
+                                    <div class="footer-widget-heading">
+                                        <h3>Subscribe</h3>
+                                    </div>
+                                    <div class="footer-text mb-25">
+                                        <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                    </div>
+                                    <div class="subscribe-form">
+                                        <form action="#">
+                                            <input type="text" placeholder="Email Address">
+                                            <button><i class="fab fa-telegram-plane"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                                <div class="copyright-text">
+                                    <p>Copyright &copy; 2024, All Right Reserved <a href="">HomeGenie</a></p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                                <div class="footer-menu">
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Terms</a></li>
+                                        <li><a href="#">Privacy</a></li>
+                                        <li><a href="#">Policy</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <style>ul {
+                    margin: 0px;
+                    padding: 0px;
+                }
+                .footer-section {
+                  background: #4A4747;
+                  position: relative;
+                }
+                .footer-cta {
+                  border-bottom: 1px solid #373636;
+                }
+                .single-cta i {
+                  color: #ff5e14;
+                  font-size: 30px;
+                  float: left;
+                  margin-top: 8px;
+                }
+                .cta-text {
+                  padding-left: 15px;
+                  display: inline-block;
+                }
+                .cta-text h4 {
+                  color: #fff;
+                  font-size: 20px;
+                  font-weight: 600;
+                  margin-bottom: 2px;
+                }
+                .cta-text span {
+                  color: #757575;
+                  font-size: 15px;
+                }
+                .footer-content {
+                  position: relative;
+                  z-index: 2;
+                }
+                .footer-pattern img {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  height: 330px;
+                  background-size: cover;
+                  background-position: 100% 100%;
+                }
+                .footer-logo {
+                  margin-bottom: 30px;
+                }
+                .footer-logo img {
+                    max-width: 200px;
+                }
+                .footer-text p {
+                  margin-bottom: 14px;
+                  font-size: 14px;
+                      color: #7e7e7e;
+                  line-height: 28px;
+                }
+                .footer-social-icon span {
+                  color: #fff;
+                  display: block;
+                  font-size: 20px;
+                  font-weight: 700;
+                  font-family: 'Poppins', sans-serif;
+                  margin-bottom: 20px;
+                }
+                .footer-social-icon a {
+                  color: #fff;
+                  font-size: 16px;
+                  margin-right: 15px;
+                }
+                .footer-social-icon i {
+                  height: 40px;
+                  width: 40px;
+                  text-align: center;
+                  line-height: 38px;
+                  border-radius: 50%;
+                }
+                .facebook-bg{
+                  background: #3B5998;
+                }
+                .twitter-bg{
+                  background: #55ACEE;
+                }
+                .google-bg{
+                  background: #DD4B39;
+                }
+                .footer-widget-heading h3 {
+                  color: #fff;
+                  font-size: 20px;
+                  font-weight: 600;
+                  margin-bottom: 40px;
+                  position: relative;
+                }
+                .footer-widget-heading h3::before {
+                  content: "";
+                  position: absolute;
+                  left: 0;
+                  bottom: -15px;
+                  height: 2px;
+                  width: 50px;
+                  background: #ff5e14;
+                }
+                .footer-widget ul li {
+                  display: inline-block;
+                  float: left;
+                  width: 50%;
+                  margin-bottom: 12px;
+                }
+                .footer-widget ul li a:hover{
+                  color: #ff5e14;
+                }
+                .footer-widget ul li a {
+                  color: #878787;
+                  text-transform: capitalize;
+                }
+                .subscribe-form {
+                  position: relative;
+                  overflow: hidden;
+                }
+                .subscribe-form input {
+                  width: 100%;
+                  padding: 14px 28px;
+                  background: #2E2E2E;
+                  border: 1px solid #2E2E2E;
+                  color: #fff;
+                }
+                .subscribe-form button {
+                    position: absolute;
+                    right: 0;
+                    background: #ff5e14;
+                    padding: 13px 20px;
+                    border: 1px solid #ff5e14;
+                    top: 0;
+                }
+                .subscribe-form button i {
+                  color: #fff;
+                  font-size: 22px;
+                  transform: rotate(-6deg);
+                }
+                .copyright-area{
+                  background: #202020;
+                  padding: 25px 0;
+                }
+                .copyright-text p {
+                  margin: 0;
+                  font-size: 14px;
+                  color: #878787;
+                }
+                .copyright-text p a{
+                  color: #ff5e14;
+                }
+                .footer-menu li {
+                  display: inline-block;
+                  margin-left: 20px;
+                }
+                .footer-menu li:hover a{
+                  color: #ff5e14;
+                }
+                .footer-menu li a {
+                  font-size: 14px;
+                  color: #878787;
+                }</style>
+            </footer>        
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>YOUR LOCATION</title>
+</head>
+<body>
+
+    <header class="main-header navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <a href="index.html"><img src="logo.png" alt="Logo" width="129" height="89"></a>
+        </a>
+
+        <div class="dropdown location-dropdown ml-2">
+            <button class="btn btn-light dropdown-toggle" type="button" id="locationDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="loco.png" alt="Location Icon" class="location-icon">
+            </button>
+            <div class="dropdown-menu" aria-labelledby="locationDropdown">
+                <a class="dropdown-item" href="index2.html">Bhopal</a>
+                <a class="dropdown-item" href="index2.html">Indore</a>
+                <a class="dropdown-item" href="index2.html">Sehore</a>
+            </div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto align-items-center">
+                <li class="nav-item">
+                    <form class="form-inline">
+                        <input class="form-control" type="search" placeholder="Search for AC services..." aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                            <img src="search.png" alt="Search Icon" class="search-icon">
+                        </button>
+                    </form>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-success ml-2" onclick="location.href='index2.html'">Schedule a service</button>
+
+                </li>
+            </ul>
+
+             <a class="whatsapp" href="https://wa.me/+916386848409" target="_blank">
+    <img src="whatsapp.png" width="64"/>
+  </a>
+            </button>
+           <a href="signup.html" class="btn btn-light ml-2 login-button">Signup</a>
+
+        </div>
+    </header>
+    
+
+<div class="main-body" style="background-color: #9dc4dd;">
+
+ 
+
+    <div class="h2-container">
+    <h2 class="text-center font-italic font-weight-bold mt-4">Your Location</h2>
+    </div>
+
+    <div class="rectangle-container">
+        <div class="rectangle left-rectangle">
+            <div class="color-part" style="background-color: #847079;">
+                <p class="text-white font-weight-bold">
+                    <h1>Bhopal</h1><br>
+                 
+                </p>
+              <a href="booking.html" class="btn btn-success" role="button">Book</a>
+            </div>
+            <div class="image-part">
+                <img src="bhopal.png" alt=" Image" width="183" height="164">
+            </div>
+        </div>
+
+        <div class="rectangle">
+            <div class="color-part" style="background-color: #915129;">
+                <p class="text-white font-weight-bold">
+                    <h1>Indore</h1><br>
+                  
+                </p>
+               <a href="booking.html" class="btn btn-success" role="button">Book</a>
+            </div>
+            <div class="image-part">
+                <img src="indore.png" alt="Image" width="183" height="164">
+            </div>
+        </div>
+
+        <div class="rectangle right-rectangle">
+            <div class="color-part" style="background-color: #fcc46f;">
+                <p class="text-white font-weight-bold">
+                    <h1>Sehore</h1><br>
+                   
+                </p>
+              <a href="booking.html" class="btn btn-success" role="button">Book</a>
+            </div>
+            <div class="image-part">
+                <img src="sehore.png" alt=" Image" width="183" height="164">
+            </div>
+        </div>
+    </div>
